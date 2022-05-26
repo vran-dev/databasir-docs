@@ -47,6 +47,7 @@ docker run -p 8888:8080 --name my-databasir -e DATABASIR_DB_URL=127.0.0.1:3306 -
 | -e DATABASIR_JWT_SECRET=databasir  | 生成用户登录 Token 的秘钥，如果部署了多个实例，那多个实例之间的秘钥要保持一致。默认为 UUID | 否   |
 | -p 8888:8080                       | 将 databasir 的 8080 端口映射到宿主机的 8888 端口            |      |
 
+
 ## 登录验证
 
 启动后，Databasir 会默认创建一个超级管理员账户
@@ -55,3 +56,23 @@ docker run -p 8888:8080 --name my-databasir -e DATABASIR_DB_URL=127.0.0.1:3306 -
 - 密码：`databasir`
 
 这时候访问 http://localhost:8888 进入登录页，输入上面的账号和密码即可成功登入，到此就算部署完成
+
+## 特殊参数
+
+除了前面提到的四个参数
+
+- DATABASIR_DB_URL
+- DATABASIR_DB_USERNAME
+- DATABASIR_DB_PASSWORD
+- DATABASIR_JWT_SECRET 
+
+[Databasir](https://github.com/vran-dev/databasir) 的 Docker 镜像还暴露了一个特殊参数 `PARAMS`.
+
+通过指定该参数可以实现覆盖任意内置配置的作用，使用该参数需要用户对 Databasir 的应用源码有一定的了解。
+
+比如下面的命令就通过 `PARAMS` 参数覆盖了系统预置的 `spring.datasource.url` 配置，从而实现了在数据库连接 URL 后添加参数 `useSSL=false`
+
+```shell
+docker run -it -d --name my-databasir -e DATABASIR_DB_USERNAME=root -e DATABASIR_DB_PASSWORD=123456 -e PARAMS='--spring.datasource.url=jdbc:mysql://127.0.0.1:3306/databasir?useSSL=false' vrantt/databasir:latest -p 8888:8080
+
+```

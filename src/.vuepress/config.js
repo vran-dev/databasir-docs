@@ -2,7 +2,6 @@ const { defaultTheme } = require('@vuepress/theme-default')
 const { mediumZoomPlugin } = require('@vuepress/plugin-medium-zoom')
 
 module.exports = {
-    dest: 'docs',
     lang: 'zh-CN',
     title: 'Databasir',
     description: '致力于提供一个简单易用的数据库文档管理平台！',

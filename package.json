@@ -1,7 +1,7 @@
 {
   "scripts": {
     "docs:dev": "vuepress dev src",
-    "docs:build": "vuepress build src"
+    "docs:build": "vuepress build src -d docs"
   },
   "devDependencies": {
     "vuepress": "^2.0.0-beta.46"
