@@ -1,0 +1,1 @@
+const e={key:"v-50cb12f2",path:"/donate/",title:"",lang:"zh-CN",frontmatter:{sidebar:"auto"},excerpt:"",headers:[{level:2,title:"\u6350\u8D60\u65B9\u5F0F",slug:"\u6350\u8D60\u65B9\u5F0F",children:[]},{level:2,title:"\u626B\u7801\u52A0\u7FA4",slug:"\u626B\u7801\u52A0\u7FA4",children:[]}],git:{},filePathRelative:"donate/index.md"};export{e as data};
