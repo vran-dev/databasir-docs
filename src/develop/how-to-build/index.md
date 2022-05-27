@@ -41,8 +41,14 @@ cd databasir
 
 
 ### 项目启动
+1. 在 MYSQL 中创建数据库
+```sql
 
-1. 在 `api/src/main/resources/application-local.properties`  中修改以下配置
+create database databasir;
+
+```
+
+2. 在 `api/src/main/resources/application-local.properties`  中修改以下配置
 
 ```properties
 # 默认端口
@@ -55,7 +61,7 @@ databasir.db.username=root
 databasir.db.password=123456
 ```
 
-2.  启动项目
+3. 启动项目
 
 ```shell
 ./gradlew api:run -Dspring.profiles.active=local

@@ -13,7 +13,6 @@ module.exports = {
         mediumZoomPlugin({
             // 配置项
         }),
-       
     ],
     
     theme: defaultTheme({

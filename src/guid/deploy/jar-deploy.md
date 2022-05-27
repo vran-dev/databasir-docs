@@ -7,6 +7,12 @@
 
 
 
+::: tip
+
+由于使用了 Java 11 以后提供的特性，所以至少需要 Java 11+
+
+:::
+
 ## 部署流程
 
 1. 在 [Github RELEASE](https://github.com/vran-dev/databasir/releases) 页面下载最新版应用 Databasir.jar (你也可以选择克隆项目后自行构建)
