@@ -1,5 +1,9 @@
 # Jar 包部署
 
+## 目录
+
+[[toc]]
+
 ## 环境要求
 
 1. Java 11+
@@ -24,9 +28,14 @@
 java -jar databasir.jar --databasir.db.url=127.0.0.1:3306 --databasir.db.username=root --databasir.db.password=123456
 ```
 
+系统启动完成以后，在浏览器中访问 [http://localhost:8080]( http://localhost:8080) 就可以进入登录压面，输入系统默认创建的管理员账号即可登入
+
+- 用户名：databasir
+- 密码：databasir
 
 
-目前支持以下参数
+
+## 参数说明
 
 | 参数名                        | 说明                  | 是否必传 | 默认值                         |
 | ----------------------------- | --------------------- | -------- | ------------------------------ |
@@ -36,18 +45,13 @@ java -jar databasir.jar --databasir.db.url=127.0.0.1:3306 --databasir.db.usernam
 | databasir.jwt.secret          | 生成登录 Token 的秘钥 | 否       | uuid                           |
 | databasir.db.driver-directory | 自定义驱动的上传目录  | 否       | 项目所在位置的 `drivers/` 目录 |
 
-**注意：**如果部署了多个 databasir 实例，一定要定义 `databasir.jwt.secret` 的值，从而使得多个实例之间的 `databasir.jwt.secret` 保持一致
 
 
+::: warning
 
-## 登录验证
+如果部署了多个 databasir 实例，一定要指定 `databasir.jwt.secret` 的值，并且保持多个实例之间的值一致
 
-应用启动完成后会默认创建 Databasir 管理员用户
-
-- 用户名：databasir
-- 密码：databasir
-
-通过该账号登录应用既可以进行管理
+:::
 
 
 

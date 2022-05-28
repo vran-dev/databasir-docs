@@ -22,3 +22,41 @@ features:
     details: 前后端代码完全开源
 footer: Apache2 Licensed | Copyright ©vran
 ---
+
+
+
+## Docker Compose 快速启动
+
+1. 创建 `docker-compose.yaml` 并粘贴以下内容
+
+```yaml
+version: "3.7"
+
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment: 
+      MYSQL_ROOT_PASSWORD: 123456
+
+  databasir:
+    image: vrantt/databasir:latest
+    links:
+      - mysql
+    ports:
+      - 8888:8080
+    environment:
+      DATABASIR_DB_URL: mysql:3306
+      DATABASIR_DB_USRNAME: root
+      DATABASIR_DB_PASSWORD: 123456
+      DATABASIR_JWT_SECRET: databasir
+```
+
+2. 启动
+
+```shell
+docker-compose up -d
+```
+
+3. 访问  `localhost:88888` 并使用 databasir / databasir 登录
