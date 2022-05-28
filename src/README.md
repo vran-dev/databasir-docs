@@ -59,4 +59,4 @@ services:
 docker-compose up -d
 ```
 
-3. 访问  `localhost:88888` 并使用 databasir / databasir 登录
+3. 访问  `localhost:8888` 并使用 databasir / databasir 登录
