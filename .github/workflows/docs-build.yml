@@ -23,9 +23,11 @@ jobs:
           cache: 'npm'
       - run: npm install
 
+      - name: Permission Grant
+        run: chmod +x ./build.sh
       # 运行构建脚本
       - name: Build VuePress site
-        run: chmod +x build.sh & ./build.sh
+        run: ./build.sh
 
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
