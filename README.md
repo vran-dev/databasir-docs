@@ -9,13 +9,15 @@
 1. 克隆项目
 
 ```shell
-https://github.com/vran-dev/databasir-docs
+git clone https://github.com/vran-dev/databasir-docs
 ```
 
 2.  安装依赖
 
 ```shell
-cd databasir-docs & npm install
+cd databasir-docs
+
+npm install
 ```
 
 3. 运行
