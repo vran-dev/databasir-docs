@@ -49,3 +49,11 @@
 6. [vue-router](https://github.com/vuejs/vue-router)
 7. [vuex](https://github.com/vuejs/vuex)
 8. [vxe-table](https://github.com/x-extends/vxe-table)
+
+
+
+## 文档技术栈
+
+框架：[vuepress](https://v2.vuepress.vuejs.org/zh/)
+
+语言：markdown
