@@ -33,5 +33,6 @@ jobs:
         run: |
           git config --global user.name 'vran-dev'
           git config --global user.email 'vran_dev@foxmail.com'
+          git add .
           git commit -am "deploy pages"
           git push
