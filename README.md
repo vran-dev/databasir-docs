@@ -24,7 +24,7 @@ cd databasir-docs & npm install
 npm run  docs:dev
 ```
 
-购进成功后，访问 http://localhost:3003 即可
+构建成功后，访问 http://localhost:3003 即可
 
 
 
