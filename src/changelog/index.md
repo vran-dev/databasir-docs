@@ -41,6 +41,9 @@ sidebar: 'auto'
 4. 重构 trigger provider 设计
 
 
+GITHUB：[https://github.com/vran-dev/databasir/releases/tag/v1.0.6](https://github.com/vran-dev/databasir/releases/tag/v1.0.6)
+
+Docker Tag：` vrantt/databasir:v1.0.6`
 
 **Full Changelog**: [https://github.com/vran-dev/databasir/compare/v1.0.5...v1.0.6](https://github.com/vran-dev/databasir/compare/v1.0.5...v1.0.6)
 
