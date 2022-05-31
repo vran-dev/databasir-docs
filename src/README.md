@@ -17,7 +17,7 @@ features:
   - title: 适配广泛
     details: 除了熟知的传统 RDBMS 外，也支持 Hive、Clickhouse 等数仓
   - title: 简单易用
-    details: 致力于提供一个简单易用的数据库文档管理平台！
+    details: 致力于提供一个简单易用的数据库元数据管理平台！
   - title: 拥抱开源
     details: 前后端代码完全开源
 footer: Apache2 Licensed | Copyright ©vran
@@ -34,23 +34,36 @@ version: "3.7"
 
 services:
   mysql:
-    image: mysql:latest
+    image: mysql:8.0.29
     ports:
       - 3306:3306
-    environment: 
+    command: --init-file /data/app/init.sql
+    volumes:
+      -  /root/app/databasir/init.sql:/data/app/init.sql
+    environment:
+      MYSQL_ROOT_USER: root
       MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: databasir
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
 
   databasir:
     image: vrantt/databasir:latest
     links:
       - mysql
     ports:
-      - 8888:8080
+      - 8080:8080
     environment:
       DATABASIR_DB_URL: mysql:3306
       DATABASIR_DB_USRNAME: root
       DATABASIR_DB_PASSWORD: 123456
-      DATABASIR_JWT_SECRET: databasir
+      DATABASIR_JWT_SECRET: 123123123
+    depends_on:
+      mysql:
+        condition: service_healthy
 ```
 
 2. 启动
@@ -59,4 +72,4 @@ services:
 docker-compose up -d
 ```
 
-3. 访问  `localhost:8888` 并使用 databasir / databasir 登录
+3. 访问  `localhost:8080` 并使用 databasir / databasir 登录

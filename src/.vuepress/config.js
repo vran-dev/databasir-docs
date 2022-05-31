@@ -4,7 +4,7 @@ const { mediumZoomPlugin } = require('@vuepress/plugin-medium-zoom')
 module.exports = {
     lang: 'zh-CN',
     title: 'Databasir',
-    description: '致力于提供一个简单易用的数据库文档管理平台！',
+    description: '一个简单易用的数据库元数据管理平台！',
     port: 3003,
     repo: 'https://github.com/vran-dev/databasir',
     repoLabel: 'databasir',

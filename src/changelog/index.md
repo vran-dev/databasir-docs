@@ -4,11 +4,46 @@ sidebar: 'auto'
 
 # Changelog
 
+
+
 ## v1.0.6
-feature
-- 
+
+::: warning
+
+低版本升级到 v1.0.6 需要做数据迁移，请查看 [v1.0.6 升级指南](/changelog/v1.0.6-migration.md) 
+
+:::
+
+**feature**
+
+1. 全新的元数据搜索功能，支持分组、项目、表、列等信息搜索
+2. 文档导出联动多选模式，支持部分导出
+3. 使用 Plantuml 导出 ER 图（SVG、PNG），支持外键血缘关系
+4. 优化文档页渲染性能，单选模式下轻松渲染 1000+ 表数据量
+5. 版本对比支持快速筛选差异项
+6. 版本对比支持显示上个版本被删除的表
+7. 新项目列表页 UI 设计
+7. docker file 新增启动参数 PARAMS
+
+**bug-fix**
+
+1. fix：差异对比时概览显示 NONE，但实际表为 ADDED
+
+**others**
+
+1. 文档从 docsify 迁移到 vuepress，更快的访问速度
+2. 文档新增开发指南内容，包括技术栈列表、项目构建、模块介绍等
+3. 更新 Docker 部署文档
+3. 重构 trigger provider 设计
+
+
+
+**Full Changelog**: [https://github.com/vran-dev/databasir/compare/v1.0.5...v1.0.6](https://github.com/vran-dev/databasir/compare/v1.0.5...v1.0.6)
+
+
 
 ## v1.0.5
+
 feature
 
 - feat：mysql、postgresql、mariaDB、oracle、sqlServer 支持生成触发器（trigger）文档信息
