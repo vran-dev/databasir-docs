@@ -14,7 +14,11 @@ sidebar: 'auto'
 
 :::
 
-**feature**
+
+
+注意：需要使用完整的元数据搜索功能需要对历史数据做迁移，迁移脚本请查看[此处](https://doc.databasir.com/changelog/v1.0.6-migration.html)
+
+⚔️ **feature**
 
 1. 全新的元数据搜索功能，支持分组、项目、表、列等信息搜索
 2. 文档导出联动多选模式，支持部分导出
@@ -23,18 +27,18 @@ sidebar: 'auto'
 5. 版本对比支持快速筛选差异项
 6. 版本对比支持显示上个版本被删除的表
 7. 新项目列表页 UI 设计
-7. docker file 新增启动参数 PARAMS
+8. docker file 新增启动参数 PARAMS
 
-**bug-fix**
+🪲 **bug-fix**
 
 1. fix：差异对比时概览显示 NONE，但实际表为 ADDED
 
-**others**
+⚙️ **others**
 
 1. 文档从 docsify 迁移到 vuepress，更快的访问速度
 2. 文档新增开发指南内容，包括技术栈列表、项目构建、模块介绍等
 3. 更新 Docker 部署文档
-3. 重构 trigger provider 设计
+4. 重构 trigger provider 设计
 
 
 
