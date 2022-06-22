@@ -110,7 +110,7 @@ docker run -p 8888:8080 --name my-databasir -e DATABASIR_DB_URL=127.0.0.1:3306 -
 下面的命令就通过 `PARAMS` 参数覆盖了系统预置的 `spring.datasource.url` 配置，从而实现了在数据库连接 URL 后添加参数 `useSSL=false`
 
 ```shell
-docker run -it -d --name my-databasir -e DATABASIR_DB_USERNAME=root -e DATABASIR_DB_PASSWORD=123456 -e PARAMS='--spring.datasource.url=jdbc:mysql://127.0.0.1:3306/databasir?useSSL=false' vrantt/databasir:latest -p 8888:8080
+docker run -it -d  -p 8888:8080 --name my-databasir -e DATABASIR_DB_USERNAME=root -e DATABASIR_DB_PASSWORD=123456 -e PARAMS='--spring.datasource.url=jdbc:mysql://127.0.0.1:3306/databasir?useSSL=false' vrantt/databasir:latest
 ```
 
 
