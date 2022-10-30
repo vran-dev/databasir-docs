@@ -58,7 +58,7 @@ services:
       - 8080:8080
     environment:
       DATABASIR_DB_URL: mysql:3306
-      DATABASIR_DB_USRNAME: root
+      DATABASIR_DB_USERNAME: root
       DATABASIR_DB_PASSWORD: 123456
       DATABASIR_JWT_SECRET: 123123123
     depends_on:
