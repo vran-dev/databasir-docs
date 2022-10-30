@@ -1,4 +1,4 @@
-import{_ as n,o as s,c as a,a as e}from"./app.dadcb700.js";const t={},p=e(`<h2 id="docker-compose-\u5FEB\u901F\u542F\u52A8" tabindex="-1"><a class="header-anchor" href="#docker-compose-\u5FEB\u901F\u542F\u52A8" aria-hidden="true">#</a> Docker Compose \u5FEB\u901F\u542F\u52A8</h2><ol><li>\u521B\u5EFA <code>docker-compose.yaml</code> \u5E76\u7C98\u8D34\u4EE5\u4E0B\u5185\u5BB9</li></ol><div class="language-yaml ext-yml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.7&quot;</span>
+import{_ as n,o as s,c as a,a as e}from"./app.821eeba4.js";const t={},p=e(`<h2 id="docker-compose-\u5FEB\u901F\u542F\u52A8" tabindex="-1"><a class="header-anchor" href="#docker-compose-\u5FEB\u901F\u542F\u52A8" aria-hidden="true">#</a> Docker Compose \u5FEB\u901F\u542F\u52A8</h2><ol><li>\u521B\u5EFA <code>docker-compose.yaml</code> \u5E76\u7C98\u8D34\u4EE5\u4E0B\u5185\u5BB9</li></ol><div class="language-yaml ext-yml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.7&quot;</span>
 
 <span class="token key atrule">services</span><span class="token punctuation">:</span>
   <span class="token key atrule">mysql</span><span class="token punctuation">:</span>
@@ -26,7 +26,7 @@ import{_ as n,o as s,c as a,a as e}from"./app.dadcb700.js";const t={},p=e(`<h2 i
       <span class="token punctuation">-</span> 8080<span class="token punctuation">:</span><span class="token number">8080</span>
     <span class="token key atrule">environment</span><span class="token punctuation">:</span>
       <span class="token key atrule">DATABASIR_DB_URL</span><span class="token punctuation">:</span> mysql<span class="token punctuation">:</span><span class="token number">3306</span>
-      <span class="token key atrule">DATABASIR_DB_USRNAME</span><span class="token punctuation">:</span> root
+      <span class="token key atrule">DATABASIR_DB_USERNAME</span><span class="token punctuation">:</span> root
       <span class="token key atrule">DATABASIR_DB_PASSWORD</span><span class="token punctuation">:</span> <span class="token number">123456</span>
       <span class="token key atrule">DATABASIR_JWT_SECRET</span><span class="token punctuation">:</span> <span class="token number">123123123</span>
     <span class="token key atrule">depends_on</span><span class="token punctuation">:</span>
