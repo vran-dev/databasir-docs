@@ -17,21 +17,10 @@
 
 <!-- tabs:start -->
 
-#### **微信群**
-
-扫码加入微信群，随时获取第一手更新内容
-
-
-<img src="https://s2.loli.net/2022/06/22/SkzZ9ePTAiuGd7H.jpg" width="250px" />
-
-
 #### **公众号**
 
-![qrcode.jpg](https://s2.loli.net/2022/04/22/mZjlG5u4vrXW1SL.jpg)
+![qrcode.jpg](https://s2.loli.net/2022/12/04/5yXA6fHBdCwPi1K.jpg)
 
-#### **邮箱**
-
-vran_dev@foxmail.com
 
 <!-- tabs:end -->
 
