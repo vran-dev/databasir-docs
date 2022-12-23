@@ -4,3 +4,5 @@ node_modules
 .vuepress/dist/**
 .src/.vuepress/dist/**
 dist/**
+idea/**
+.idea/**

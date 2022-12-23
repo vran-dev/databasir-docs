@@ -4,7 +4,23 @@ sidebar: 'auto'
 
 # Changelog
 
+## v1.0.7
 
+⚔️ **feature**
+
+1. 概览表格支持按 name 进行搜索过滤
+2. 优化差异对比
+3. 表信息合并多个列
+4. 审计日志支持按模块筛选
+
+🪲 **bug-fix**
+
+1. 修复 SSRF
+2. 修复表格描述信息为空
+
+Docker Tag：[`vrantt/databasir:v1.0.7`](https://hub.docker.com/r/vrantt/databasir/tags)
+
+**Full Changelog**: [https://github.com/vran-dev/databasir/compare/v1.0.6...v1.0.7](https://github.com/vran-dev/databasir/compare/v1.0.6...v1.0.7)
 
 ## v1.0.6
 

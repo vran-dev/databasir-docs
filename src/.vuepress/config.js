@@ -114,6 +114,10 @@ module.exports = {
                             link: '/guid/advance-gitlab-oauth2/index.md' 
                         },
                         {
+                            text: '企业微信扫码登录',
+                            link: '/guid/advance-wework-oauth2/index.md'
+                        },
+                        {
                             text: '扩展数据库类型',
                             link: '/guid/advance-database-extension/index.md' 
                         },
